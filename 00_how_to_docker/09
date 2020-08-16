@@ -1,0 +1,7 @@
+apt-get update && apt-get upgrade -y && apt-get install build-essential git -y
+
+#First we have to open a debian container by writing: docker run -it --rm debian and then we can use the commands.
+#To test this copy following:
+#	echo -e '#include <stdio.h>\n\nint main(void)\n{\n\tprintf("hello world\\n");\n\treturn(0);\n}' > /hello.c
+#	gcc -o hello hello.c
+#	./hello
